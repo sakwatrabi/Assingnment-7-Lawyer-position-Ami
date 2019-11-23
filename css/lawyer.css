@@ -1,0 +1,402 @@
+.logo {
+  flex-basis: 20%;
+  max-width: 20%;
+}
+.header .container .row {
+  padding: 12px 0;
+  align-items: center;
+}
+.logo {
+  align-items: center;
+  justify-content: center;
+}
+nav {
+  flex-basis: 80%;
+  max-width: 80%;
+}
+.header nav .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav ul li {
+  display: inline-block;
+  padding: 0 10px;
+}
+nav ul li a {
+  font-size: 12px;
+  color: #0b31a4;
+  font-family: "Montserrat";
+  font-weight: 600;
+}
+.banner {
+  position: relative;
+}
+.banner span h1 {
+  color: white;
+  position: absolute;
+  top: 29%;
+  left: 50%;
+  transform: translate(-50%, -29%);
+  font-size: 61px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1;
+}
+.bnrleft {
+  position: absolute;
+  top: 0;
+}
+.arrow {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  color: white;
+  transform: translate(-50%);
+  font-size: 20px;
+  animation-name: arrow-down;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+}
+@keyframes arrow-down {
+  0% {
+    bottom: 80px;
+  }
+  50% {
+    bottom: 40px;
+  }
+  100% {
+    bottom: 40px;
+  }
+}
+.whoweare {
+  justify-content: center;
+  align-items: center;
+  padding: 120px;
+}
+.who_left {
+  flex-basis: 70%;
+  max-width: 70%;
+  padding-right: 100px;
+}
+span {
+}
+.whoweare span {
+  height: 3px;
+  width: 50px;
+  background: #f15627;
+  display: block;
+  padding: 0px 40px;
+}
+.whoweare h4 {
+  font-size: 36px;
+  line-height: 0px;
+  color: #0b31a4;
+  font-family: "Montserrat";
+}
+.whoweare h6 {
+  font-size: 15px;
+  color: #adbbbd;
+  font-family: "Open Sans";
+  font-weight: 400;
+  text-align: justify;
+}
+.who_right {
+  flex-basis: 30%;
+  max-width: 30%;
+}
+.whatwedo {
+  background: #fafcfc;
+  background-image: url(../images/wahtwedobg.png);
+  background-repeat: no-repeat;
+  padding: 80px 0px 120px;
+  background-position: bottom right;
+}
+.whatwedo .heading {
+  text-align: center;
+  margin-bottom: 70px;
+}
+.whatwedo .heading span {
+  height: 3px;
+  width: 50px;
+  background: #f15627;
+  display: block;
+  padding: 0px 40px;
+  margin: auto;
+}
+.whatwedo h4 {
+  font-size: 36px;
+  line-height: 0px;
+  color: #0b31a4;
+  font-family: "Montserrat";
+  text-align: center;
+}
+.whatwedo .content-box {
+  flex-basis: 33.33%;
+  max-width: 33.33%;
+  position: relative;
+  padding-right: 20px;
+  width: auto;
+}
+.content {
+  background: #557198;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  display: block;
+}
+.whatwedo .content p {
+  position: absolute;
+  z-index: 1;
+  font-size: 20px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: 700;
+  margin: auto;
+  top: 80%;
+  left: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+  text-align: center;
+  opacity: 0;
+  transition: all 0.4s;
+}
+.whatwedo .content .overlay {
+  position: absolute;
+  display: block;
+  height: 0;
+  width: 100%;
+  bottom: 0;
+  display: block;
+  background: #57568575;
+  transition: all 0.4s ease-in-out;
+  opacity: 0;
+}
+.whatwedo .content img {
+  width: 100%;
+}
+.whatwedo .content a {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  transform: translate(-50%);
+  z-index: 1;
+  transition: all 0.4s ease-in-out;
+  opacity: 0;
+}
+.whatwedo .content:hover p {
+  top: 50%;
+  opacity: 1;
+}
+
+.whatwedo .content:hover .overlay {
+  opacity: 1;
+  height: 100%;
+}
+
+.whatwedo .content:hover a {
+  left: 50%;
+  opacity: 1;
+}
+.attorneys {
+  background-image: url(../images/ATTORNEYSBG.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 215px 0 200px;
+  gap: 30px 17px;
+}
+.grid-container .gri-1 h4 {
+  font-size: 36px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: 700;
+  margin: 10px 0px;
+}
+.gri-1 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  padding-top: 100px;
+}
+.grid-container .gri-1 span {
+  height: 3px;
+  width: 50px;
+  background: #f15627;
+  display: block;
+  padding: 0px 40px;
+}
+.grid-container .gri-1 p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #91a4ee;
+  font-family: "Open Sans";
+  font-weight: 400;
+  padding-right: 90px;
+  padding-top: 0px;
+}
+.grid-container .gri-1 a h5 {
+  font-size: 18px;
+  color: #ff631a;
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+
+.attorneys-details span {
+  height: 50%;
+  width: 100%;
+  display: block;
+  position: absolute;
+  background: rgba(47, 59, 128, 0.55);
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+  bottom: 0;
+}
+.attorneys-details h6 {
+  font-size: 24px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  position: absolute;
+  bottom: 5px;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+  z-index: 1;
+}
+.attorneys-details:hover span {
+  height: 100%;
+  opacity: 1;
+}
+
+.attorneys-details:hover h6 {
+  opacity: 1;
+  bottom: 30px;
+}
+.gri {
+  position: relative;
+}
+.gri .attorneys-details {
+  position: relative;
+}
+
+.language-box {
+  max-width: 25%;
+  flex-basis: 25%;
+  padding-right: 20px;
+}
+.heading span {
+  height: 3px;
+  width: 50px;
+  background: #f15627;
+  display: block;
+  padding: 0px 40px;
+  margin: auto;
+}
+.languages .heading h4 {
+  font-size: 36px;
+  line-height: 0px;
+  color: #0b31a4;
+  font-family: "Montserrat";
+  text-align: center;
+}
+.language-box h5 {
+  font-size: 20px;
+  color: #000da1;
+  font-family: "Montserrat";
+  padding: 5px 0;
+  margin: 5px 0;
+}
+.language-box p {
+  font-size: 14px;
+  color: #adbbbe;
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+.language-box span {
+  font-size: 18px;
+  color: #ff631a;
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+.languages {
+  padding: 130px 0 140px;
+}
+.contactform {
+  background: #444b85;
+  padding: 100px 0;
+}
+.contactform .heading h4 {
+  font-size: 36px;
+  line-height: 0px;
+  color: #fff;
+  font-family: "Montserrat";
+  text-align: center;
+}
+.contactform .row {
+  justify-content: center;
+  text-align: center;
+}
+.contactform .form {
+  max-width: 50%;
+  flex-basis: 505;
+}
+.contactform .form input {
+  width: 100%;
+  background: transparent;
+  border: transparent;
+  border-bottom: 1px solid #75699691;
+  margin-top: 10px;
+  padding-top: 10px;
+  color: #fff;
+  font-size: 14px;
+}
+.contactform .form input[type="submit"] {
+  width: auto;
+  background: #f15628;
+  color: #fff;
+  padding: 16px 90px;
+  border-bottom: 0;
+  font-weight: 900;
+  margin-top: 30px;
+}
+.contactform .form textarea {
+  width: 100%;
+  background: transparent;
+  border: transparent;
+  border-bottom: 1px solid #756996de;
+  margin-top: 10px;
+  padding-top: 10px;
+  font-size: 14px;
+  color: #fff;
+}
+footer .left_footer {
+  flex-basis: 50%;
+  max-width: 50%;
+}
+footer .social_link ul {
+  display: inline-flex;
+}
+footer .social_link ul li {
+  padding: 0 10px;
+}
+footer .social_link ul li a {
+  color: #fff;
+}
+footer {
+  background: #02072e;
+  padding: 10px 0;
+}
+footer .row {
+  justify-content: space-between;
+}
